@@ -1,7 +1,13 @@
 #Declarar variables
 NOMBRE="Isaac"
+HORA=$(date +%H)
 
-echo "Hola $NOMBRE, bienvenido" 
+HORA=$(date +%H)
 
-echo "Esta es fecha y hora actual: $(date)"
-
+if [ $HORA -ge 6 ] && [ $HORA -lt 12 ]; then
+    echo "¡Buenos días, $NOMBRE! Son las $(date +%H:%M)."
+elif [ $HORA -ge 12 ] && [ $HORA -lt 18 ]; then
+  echo "¡Buenas tardes, $NOMBRE! Son las $(date +%H:%M)."
+else
+  echo "¡Buenas noches, $NOMBRE! Son las $(date +%H:%M)."
+fi
