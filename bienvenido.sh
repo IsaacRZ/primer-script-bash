@@ -11,5 +11,5 @@ elif [ $HORA -ge 12 ] && [ $HORA -lt 18 ]; then
 else
   echo "¡Buenas noches, $NOMBRE! Son las $(date +%H:%M)."
 fi
-#Cambio hecho para probar PULL REQUEST
+#Cambio hecho para probar PULL REQUESTs
 echo "Cambio en GITHUB" 
